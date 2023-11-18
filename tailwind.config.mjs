@@ -1,10 +1,25 @@
 /** @type {import("tailwindcss").Config} */
 export default
   {
-    content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+    content:
+      [
+        "./src/**/*.{js,ts,jsx,tsx,mdx,astro}"
+      ],
     theme:
     {
-      extend: {}
-    },
-    plugins: []
+      colors:
+      {
+        "white": "#FFFFFF",
+        "green": "#006400",
+        "black": "#000000"
+      },
+      fontFamily:
+      {
+        primary: ["serif"]
+      },
+      container:
+      {
+        center: true
+      }
+    }
   };
